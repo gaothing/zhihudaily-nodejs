@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>模板</title>
+	</head>
+	<body>
+		<div class="main">
+    <table class="data-show">
+        <th class="thead">
+            <td class="name">名字</td>
+            <td class="area_id">地区编号</td>
+            <td class="area_name">地区名称</td>
+            <td class="river_name">河流名称</td>
+        </th>
+         {% for item in data %}
+        <tr>
+            <td >{{item.name}}</td>
+            <td >{{item.id}}</td>
+           
+        </tr>
+         {% endfor %}
+    </table>
+</div>
+	</body>
+</html>

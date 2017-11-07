@@ -1,0 +1,147 @@
+//hrader
+header{
+    height: 0.8rem;
+    width: 100%;
+    max-width: 1024px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background: yellowgreen;
+    z-index: 2;
+    .menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 12%;
+        height: 100%;
+        float: left;
+        line-height: 0.8rem;
+        text-align: center;
+        font-size: 0.4rem;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        i{
+            font-family: "iconfont";
+            color: #FFFFFF;
+        }
+    }
+    .h{
+        float: left;
+        width: 100%;
+        text-align: center;
+        line-height: 0.8rem;
+        height: 100%;
+        color: #FFFFFF;
+//      letter-spacing: 0.1rem;
+    }
+}
+//aside
+aside{
+    width: 40%;
+    height: 100%;
+    background: #FFFFFF;
+    position: fixed;
+    left: -40%;
+    top: 0.8rem;
+    z-index: 5;
+    overflow: hidden;
+    ul{
+        height: 100%;
+        li{
+            height: 7%;
+            color: #9ACD32;
+            line-height: 1rem;
+            padding-left: 0.4rem;
+            border-bottom: 0.01rem dashed #9ACD32;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: #000000;
+            }
+        }
+    }
+}
+.aside_show{
+    animation: asidehs .4s linear forwards;
+}
+.aside_hide{
+    animation: asidehs2 .4s linear forwards;
+    
+}
+@keyframes asidehs{
+    0%{
+       left: -40%; 
+    }100%{
+        left: 0%;
+    }
+}
+@keyframes asidehs2{
+    0%{
+       left: 0; 
+    }100%{
+        left: -40%;
+    }
+}
+.cover{
+    position: fixed;
+    left: 0;
+    top: 0.8rem;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 3;
+    display: none;
+}
+//banner
+.warp_list{
+    padding: 0 0.2rem;
+//  margin-top: 0.8rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    li{
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        margin-top: 0.1rem;
+        width: 100%;
+        height: 1.8rem;     
+        .con_img{
+            float: left;
+            width: 1.8rem;
+            height: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .content{
+            padding: 0.2rem;
+            float: left;
+            width: 5.3rem;
+            margin: 0.08rem 0;
+            height: 1.64rem;
+            box-shadow: 0 0 10px #EFEFEF;
+            color: #888888;
+        }
+    }
+}
+.swiper-container {
+    width: 100%;
+    height: 3.4rem;
+    background: #FFFFFF;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+.silderImg{
+    height: 100%;
+    width: 100%;
+}

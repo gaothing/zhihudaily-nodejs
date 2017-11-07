@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="/css/show.css" />
+	</head>
+	<style type="text/css">
+		body{
+			padding: 0 0.2rem;
+		}
+		p{
+			color: #666666;
+			line-height: 0.6rem;
+			text-indent: 2em;
+			margin-bottom: 0.8rem;
+		}
+		header .h{
+			padding: 0 1rem;
+			overflow: hidden ;
+			text-overflow: ellipsis;
+		}
+		.show_img{
+			margin-top: 0.8rem;
+			width: 100%;
+		}
+	</style>
+	<body>
+	<!--menu-->
+	<header>
+		<div class="menu">
+			<a href="../../"><i>&#xe603;</i></a>
+		</div>
+		<div class="h">{{data[1]}}</div>
+	</header>
+	<img class="show_img" src="https://images.weserv.nl/?url=/pic3.zhimg.com{{data[2]}}" alt="">
+	<p>
+		{{data[0]}}
+	</p>
+	<ul  data-am-widget="navbar" class="bot_comment am-navbar am-cf am-navbar-pink am-show-sm-only">
+		<li><i>&#xe600;</i>
+			<span>{{data[4]}}</span>
+		</li>
+		<li><i>&#xe601;</i>
+			<span>{{data[3]}}</span>
+		</li>
+		<li class="share" data-am-navbar-share><i>&#xe612;</i></li>
+	</ul>
+	<div class="bdsharebuttonbox" style="margin-bottom: 1rem;display: none;">  
+	<a href="#" class="bds_more" data-cmd="more"></a>  
+	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>  
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>  
+	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>  
+	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>  
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>  
+</div>  
+<script>  
+	document.getElementsByClassName("share")[0].onclick=function(){
+		document.getElementsByClassName("bdsharebuttonbox")[0].style.display="block";
+	}
+	
+window._bd_share_config={  
+        "common":{  
+            "bdPopTitle":"您的自定义pop窗口标题",  
+            "bdSnsKey":{},  
+            "bdText":"此处填写自定义的分享内容",   
+            "bdMini":"2",  
+            "bdMiniList":false,  
+            "bdPic":"http://localhost/centlight/public/attachment/201410/24/14/5449ef39574f5_282x220.jpg", /* 此处填写要分享图片地址 */  
+            "bdStyle":"0",  
+            "bdSize":"30"  
+            },  
+        "share":{}  
+};  
+with(document)0[  
+                (getElementsByTagName('head')[0]||body).  
+                appendChild(createElement('script')).  
+                src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)  
+];  
+        </script> 
+	</body>
+</html>

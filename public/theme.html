@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="/css/swiper-3.4.2.min.css" />
+</head>
+<style>
+    .warp_list li .content{
+        width: 100%;
+    }
+    .warp_list  {
+        margin-top: 0.8rem;
+    }
+</style>
+<body>
+<!--menu-->
+<header>
+    <div class="menu">
+        <a href="../../"><i>&#xe603;</i></a>
+    </div>
+    <div class="h">{{data.name}}</div>
+</header>
+<ul class="warp_list">
+    <!--{{data.stories[0].id}}-->
+    {% for item in data.stories %}
+    <li>
+        <a href="/user/{{item.id}}">
+            <div class="content">{{item.title}}</div>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+<script src="/js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  var mySwiper = new Swiper('.one_silder', {
+       loop: true,
+        autoplay: 1200,
+        pagination: 'one_silder_pagination',
+        paginationClickable: true
+   })
+</script>

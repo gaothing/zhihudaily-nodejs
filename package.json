@@ -1,0 +1,16 @@
+{
+  "name": "node-test",
+  "version": "0.0.1",
+  "description": "node test",
+  "main": "app.js",
+  "author": "gaothing",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "*",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "nunjucks": "^3.0.1",
+    "path": "^0.12.7",
+    "request": "^2.83.0"
+  }
+}
